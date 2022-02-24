@@ -1,8 +1,23 @@
 ;(function($){
+
+    // News Scroll
+
+    $(".ads-scroll").owlCarousel({
+        items:1,
+        loop:true,
+        nav:false,
+        dots:false,
+        animateOut: 'fadeOut',
+        smartSpeed:500,
+        autoplay:true,
+        mouseDrag:false
+    })
+
     // Banner
 
     $(".arr-banner").owlCarousel({
         items:1,
+        loop:true,
         nav:false,
         animateOut: 'fadeOut',
         smartSpeed:300,

@@ -211,6 +211,50 @@ button {
     padding: 50px 0;
 }
 
+/* Header */
+
+.arr-main-nav{
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.arr-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.arr-main-nav .nav-item{
+    display: inline-block;
+}
+
+.arr-main-nav  .nav-item a{
+    display: block;
+    color: var(--white-color);
+    margin-left: 20px;
+    padding: 16px 0;
+}
+
+.nav-icon{
+    display: inline-block;
+    margin-left: 16px;
+    padding: 16px 0;
+}
+
+.ads-scroll p{
+    font-size: 16px;
+    font-weight: var(--font-weight-semi-bold);
+    padding: 10px 0;
+    text-align: center;
+}
+
 /* Banner */
 
 .single-slide{
