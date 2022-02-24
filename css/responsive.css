@@ -68,6 +68,7 @@
     .nav-toggle i{
         font-size: 20px;
         line-height: 30px;
+        transition: var(--transition);
     }
 }
 

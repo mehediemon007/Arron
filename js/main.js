@@ -3,7 +3,8 @@
     // Nav Toggle
 
     $(".nav-toggle").on("click",function(){
-
+        
+        $("i",this).toggleClass("fa-bars fa-times")
         $(".nav-cat-menu").slideToggle(300)
     })
 

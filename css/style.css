@@ -250,6 +250,7 @@ button {
     display: inline-block;
     margin-left: 16px;
     padding: 16px 0;
+    cursor: pointer;
 }
 
 .ads-scroll p{
