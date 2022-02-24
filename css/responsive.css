@@ -1,8 +1,84 @@
+/* Max Width 991px */
+@media only screen and (max-width:991px){
+
+    .shop-banner-content{
+        margin-top: 40px;
+    }
+
+    .brand-image{
+        height: 150px;
+    }
+}
+
+/* Max Width 767px */
+@media only screen and (max-width:767px){
+
+    .range-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer-widget{
+        margin-bottom: 16px;
+    }
+
+    .footer-widget h6{
+        margin-bottom: 10px;
+    }
+}
+
 /* Max Width 575px */
 @media only screen and (max-width:575px){
 
     .cat-image img{
         width: 100%;
-        height: 400px;
+        height: 290px;
+    }
+}
+
+/* Max Width 480px */
+@media only screen and (max-width:480px){
+
+    .arr-nav-menu{
+        display: none;
+    }
+
+    .nav-cat-menu{
+        position: absolute;
+        display: none;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 10;
+    }
+
+    .nav-cat-menu .nav-item{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-toggle{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .nav-toggle i{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/* Max Width 380px */
+@media only screen and (max-width:380px){
+
+    h2{
+        font-size: 35px;
+    }
+
+    .range-container{
+        grid-template-columns: repeat(2,1fr);
     }
 }

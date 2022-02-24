@@ -1,5 +1,12 @@
 ;(function($){
 
+    // Nav Toggle
+
+    $(".nav-toggle").on("click",function(){
+
+        $(".nav-cat-menu").slideToggle(300)
+    })
+
     // News Scroll
 
     $(".ads-scroll").owlCarousel({
@@ -27,10 +34,20 @@
     // Arrival Slider
 
     $(".dress-slider").owlCarousel({
-        items:4,
         margin:10,
         nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+            0:{
+                items:2
+            },
+            480:{
+                items:3
+            },
+            992:{
+                items:4
+            }
+        }
     })
 
 })(jQuery);

@@ -231,6 +231,10 @@ button {
     align-items: center;
 }
 
+.nav-toggle{
+    display: none;
+}
+
 .arr-main-nav .nav-item{
     display: inline-block;
 }
@@ -316,7 +320,6 @@ button {
     position: absolute;
     width: 100%;
     bottom: 30px;
-    color: var(--white-color);
     text-align: center;
 }
 
@@ -403,6 +406,12 @@ button {
 }
 
 /* Shop Range */
+
+.range-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
 
 .single-range h5{
     font-size: 18px;
