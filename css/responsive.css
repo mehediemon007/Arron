@@ -1,0 +1,8 @@
+/* Max Width 575px */
+@media only screen and (max-width:575px){
+
+    .cat-image img{
+        width: 100%;
+        height: 400px;
+    }
+}
