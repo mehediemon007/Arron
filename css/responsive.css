@@ -35,7 +35,7 @@
 
     .cat-image img{
         width: 100%;
-        height: 290px;
+        object-fit: cover;
     }
 }
 
@@ -74,6 +74,22 @@
         line-height: 30px;
         transition: var(--transition);
     }
+
+    .footer-newsletter{
+        align-items: flex-start;
+    }
+
+    .footer-top{
+        flex-wrap: wrap;
+    }
+
+    .footer-newsletter input:not([type="checkbox"]){
+        width: 380px;
+    }
+
+    .footer-newsletter p{
+        text-align: left;
+    }
 }
 
 /* Max Width 380px */
@@ -85,5 +101,9 @@
 
     .range-container{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-newsletter input:not([type="checkbox"]){
+        width: 280px;
     }
 }
