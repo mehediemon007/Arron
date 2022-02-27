@@ -11,14 +11,22 @@
     // News Scroll
 
     $(".ads-scroll").owlCarousel({
-        items:1,
         loop:true,
         nav:false,
         dots:false,
         animateOut: 'fadeOut',
         smartSpeed:500,
         autoplay:true,
-        mouseDrag:false
+        mouseDrag:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                loop:false,
+                items:3
+            }
+        }
     })
 
     // Banner
@@ -27,7 +35,6 @@
         items:1,
         loop:true,
         nav:false,
-        animateOut: 'fadeOut',
         smartSpeed:300,
         autoplay:true
     })
@@ -49,6 +56,29 @@
                 items:4
             }
         }
+    })
+
+    // Nav Modal
+
+    $(".nav-item .fa-search").on("click",function(){
+
+        $(".nav-modal").addClass("show");
+
+    })
+
+    $(".serach-close").on("click",function(){
+
+        $(".nav-modal").removeClass("show")
+
+    })
+
+    // Campaign Slider
+
+    $(".campaign-slider").owlCarousel({
+        items:1,
+        dots:false,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     })
 
 })(jQuery);

@@ -13,6 +13,10 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
 
+    .nav-item .fa-search{
+        display: inline-block;
+    }
+    
     .range-container{
         grid-template-columns: repeat(3,1fr);
     }

@@ -28,27 +28,37 @@
     <header class="arr-header">
         <div class="arr-main-nav">
             <div class="container">
-                <div class="arr-nav">
-                    <div class="nav-left">
-                        <span class="nav-toggle"><i class="fas fa-bars"></i></span>
-                        <a href="#" class="logo"><h3 class="text-white">ARRON</h3></a>
-                        <ul class="nav-cat-menu">
-                            <li class="nav-item"><a href="#">Women</a></li>
-                            <li class="nav-item"><a href="#">Men</a></li>
-                        </ul>
+                <div class="arr-nav row">
+                    <div class="col-lg-4 col-md-5 col-6">
+                        <div class="nav-left">
+                            <span class="nav-toggle"><i class="fas fa-bars"></i></span>
+                            <a href="#" class="logo"><h3 class="text-white">ARRON</h3></a>
+                            <ul class="nav-cat-menu">
+                                <li class="nav-item"><a href="#">Women</a></li>
+                                <li class="nav-item"><a href="#">Men</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav-right">
-                        <div class="nav-icon">
-                            <span><i class="fas fa-user"></i></span>
+                    <div class="col-lg-6 col-md-4 d-none d-md-block">
+                        <div class="nav-search">
+                            <input type="text" placeholder="Search for items and brands">
+                            <span class="search-icon"><i class="fas fa-search"></i></span>
                         </div>
-                        <div class="nav-icon">
-                            <span><i class="fas fa-heart"></i></span>
-                        </div>
-                        <div class="nav-icon">
-                            <span><i class="fas fa-shopping-bag"></i></span>
-                        </div>
-                        <div class="nav-icon">
-                            <span><i class="fas fa-search"></i></span>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="nav-right">
+                            <div class="nav-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="nav-icon">
+                                <span><i class="fas fa-user"></i></span>
+                            </div>
+                            <div class="nav-icon">
+                                <span><i class="fas fa-heart"></i></span>
+                            </div>
+                            <div class="nav-icon">
+                                <span><i class="fas fa-shopping-bag"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,8 +77,18 @@
         <div class="arr-toolbar">
             <div class="container">
                 <div class="ads-scroll owl-carousel">
-                    <p>15% Discount On Winter Clear Out</p>
-                    <p>Boshonto Items Are Comming Soon</p>
+                    <div class="item">
+                        <h5>15% Discount On Winter Clear Out</h5>
+                        <p>* Only Selected Products</p>
+                    </div>
+                    <div class="item">
+                        <h5>Boshonto Items Are Comming Soon</h5>
+                        <p>Get Ready</p>
+                    </div>
+                    <div class="item">
+                        <h5>10% Extra Discout For Teens</h5>
+                        <p>* For First Order</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,24 +134,42 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="single-cat mb-4 mb-sm-0">
                             <div class="cat-image">
-                                <a href="#"><img src="images/women/women-cat.jpg" alt="Women Dress"></a>
-                                <h4>Shop Women</h4>
+                                <a href="#"><img src="images/women/women-cata.jpg" alt="Women Dress"></a>
+                                <div class="cat-content">
+                                    <div class="cat-heading mb-3">
+                                        <h1>Women Sweat</h1>
+                                        <h1 class="ps-3">Fashion</h1>
+                                    </div>
+                                    <a href="#">Shop Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="single-cat mb-4 mb-md-0">
                             <div class="cat-image">
-                                <a href="#"><img src="images/men/men-cat.jpg" alt="Men Dress"></a>
-                                <h4>Shop Men</h4>
+                                <a href="#"><img src="images/men/men-cata.jpg" alt="Men Dress"></a>
+                                <div class="cat-content mb-3">
+                                    <div class="cat-heading">
+                                        <h1>Men Casual</h1>
+                                        <h1 class="ps-3">Fashion</h1>
+                                    </div>
+                                    <a href="#">Shop Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="single-cat">
                             <div class="cat-image">
-                               <a href="#"> <img src="images/men/men-cat.jpg" alt="Discount Dress"></a>
-                                <h4>Shop Discount</h4>
+                               <a href="#"> <img src="images/women/dis-cata.jpg" alt="Discount Dress"></a>
+                               <div class="cat-content">
+                                <div class="cat-heading mb-3">
+                                    <h1>Shop On</h1>
+                                    <h1 class="ps-3">Discount</h1>
+                                </div>
+                                <a href="#">Shop Now</a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -413,6 +451,39 @@
             </div>
         </section>
 
+        <!-- Campaign -->
+
+        <section class="arr-campaign mt-50">
+            <div class="container">
+                <div class="sec-heading text-center">
+                    <h3 class="mb-5">Campaign</h3>
+                </div>
+                <div class="campaign-slider owl-carousel">
+                    <div class="single-slide">
+                        <img src="images/men/men-camp.jpg" alt="Men Campaign">
+                        <div class="camp-content">
+                            <h2 class="text-white">Stylish Men Prmium Casual Line Up</h2>
+                            <a href="#" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <img src="images/men/men-camp.jpg" alt="Men Campaign">
+                        <div class="camp-content">
+                            <h2 class="text-white">Stylish Men Prmium Casual Line Up</h2>
+                            <a href="#" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <img src="images/men/men-camp.jpg" alt="Men Campaign">
+                        <div class="camp-content">
+                            <h2 class="text-white">Stylish Men Prmium Casual Line Up</h2>
+                            <a href="#" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Pant Dress -->
 
         <section class="arr-pants sec-spacer">
@@ -634,73 +705,77 @@
 
     <footer class="arr-footer">
         <div class="container">
-            <div class="footer-top pb-5">
-                <div class="row">
-                    <div class="col-md-2 col-6">
-                        <div class="footer-widget">
-                            <h6>Customer Care</h6>
-                            <ul class="widget-list">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">FAQ's</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Returns Care</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6">
-                        <div class="footer-widget">
-                            <h6>About Us</h6>
-                            <ul class="widget-list">
-                                <li><a href="#">Choose What You Pay</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Store</a></li>
-                                <li><a href="#">Read Our Journal</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6">
-                        <div class="footer-widget">
-                            <h6>Connect</h6>
-                            <ul class="widget-list">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Youtube</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-6">
-                        <div class="footer-widget">
-                            <h6>Term & Condition</h6>
-                            <ul class="widget-list">
-                                <li><a href="#">Legal Policy</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Return Conditions</a></li>
-                                <li><a href="#">Payment Privacy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="footer-widget">
-                            <h6>Join Us</h6>
-                            <p class="mb-3">New Subscriber Will Get Tk. 500 Discount On First Order</p>
-                            <form>
-                                <fieldset>
-                                    <input type="email" placeholder="Email Address">
-                                    <button type="submit">Subscribe</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
+            <div class="footer-newsletter">
+                <h3>Trear Your Inbox</h3>
+                <p>Receive our newsletter on the latest deals and happenings. You can unsubscribe any time you want. <a href="#"><b>Read More</b> about how and why we ask for this data.</a></p>
+                <form>
+                    <fieldset class="mb-3">
+                        <label for="check">
+                            <input type="checkbox" id="check">
+                            I am 18 years old
+                        </label>
+                    </fieldset>
+                    <fieldset class="position-relative">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">Subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="footer-top sec-spacer">
+                <div class="footer-widget">
+                    <h6>Customer Care</h6>
+                    <ul class="widget-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Returns Care</a></li>
+                    </ul>
                 </div>
+                <div class="footer-widget">
+                    <h6>About Us</h6>
+                    <ul class="widget-list">
+                        <li><a href="#">Choose What You Pay</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Read Our Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Term & Condition</h6>
+                    <ul class="widget-list">
+                        <li><a href="#">Legal Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Return Conditions</a></li>
+                        <li><a href="#">Payment Privacy</a></li>
+                    </ul>
+                </div>       
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2022, All Rights Reserved By <a href="#">Arron</a></p>
+                <div class="footer-social-menu">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="mt-3">&copy; 2022, All Rights Reserved By <a href="#">Arron</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Nav Search Modal -->
+
+    <div class="nav-modal">
+        <div class="container">
+            <span class="serach-close"><i class="fas fa-times"></i></span>
+            <div class="nav-search">
+                <input type="text" placeholder="Search for items and brands">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+    </div>
     
     <!-- Js files -->
     <script src="js/modernizr-3.5.0.min.js"></script>
