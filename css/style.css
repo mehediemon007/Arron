@@ -387,6 +387,11 @@ button {
     color: var(--white-color);
 }
 
+.banner-content h1{
+    font-size: 65px;
+    margin-bottom: 8px;
+}
+
 .arr-banner .owl-dots{
     position: absolute;
     bottom: 5%;
@@ -438,7 +443,8 @@ button {
     padding-bottom: 32px;
 }
 
-.cat-content h1{
+.cat-content h1,
+.banner-content h1{
     font-size: 55px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
