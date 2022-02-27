@@ -313,6 +313,56 @@ button {
     font-size: 18px;
 }
 
+/* Mega Menu */
+
+.arr-mega-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: none;
+    background-color: var(--white-color);
+    padding: 20px;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.arr-mega-menu > div:not(:last-of-type){
+    border-right: 1px solid #d3d3d3;
+}
+
+.single-menu h5{
+    text-decoration: underline;
+}
+
+.arr-main-nav .single-menu a{
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+    padding: 2px 0;
+}
+
+.round-img{
+    border-radius: 50%;
+}
+
+.nav-item.has-children:hover .arr-mega-menu{
+    display: flex;
+}
+
+.hoz-cat-list li{
+    margin-bottom: 5px;
+}
+
+.hoz-cat-list li a{
+    display: flex !important;
+    height: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    margin-left: 0 !important;
+    align-items: center;
+}
+
 /* Banner */
 
 .single-slide{
