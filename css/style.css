@@ -246,7 +246,21 @@ button {
 }
 
 .arr-nav-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
     background-color: #e7e7e7;
+    visibility: hidden;
+    opacity: 0;
+    padding: 6px 0;
+    transition: var(--transition);
+    z-index: 100;
+}
+
+.nav-cat-menu .nav-item:hover > .arr-nav-menu{
+    visibility: visible;
+    opacity: 1;
 }
 
 .nav-item{
@@ -333,7 +347,7 @@ button {
 
 .arr-mega-menu{
     position: absolute;
-    top: 100%;
+    top: 112%;
     left: 0;
     width: 100%;
     height: max-content;
