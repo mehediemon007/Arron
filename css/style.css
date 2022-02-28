@@ -214,13 +214,13 @@ button {
 
 /* Header */
 
-.arr-main-nav{
+.aar-main-nav{
     width: 100%;
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
-.arr-nav{
+.aar-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -245,22 +245,12 @@ button {
     display: none;
 }
 
-.arr-nav-menu{
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
+.aar-nav-menu{
     background-color: #e7e7e7;
-    visibility: hidden;
-    opacity: 0;
-    padding: 6px 0;
-    transition: var(--transition);
-    z-index: 100;
 }
 
-.nav-cat-menu .nav-item:hover > .arr-nav-menu{
-    visibility: visible;
-    opacity: 1;
+.nav-menu > li > a{
+    padding: 10px 0;
 }
 
 .nav-item{
@@ -334,7 +324,7 @@ button {
     cursor: pointer;
 }
 
-.arr-toolbar{
+.aar-toolbar{
     background-color: #f5e7cc;
     padding: 10px 0;
 }
@@ -345,9 +335,9 @@ button {
 
 /* Mega Menu */
 
-.arr-mega-menu{
+.aar-mega-menu{
     position: absolute;
-    top: 112%;
+    top: 100%;
     left: 0;
     width: 100%;
     height: max-content;
@@ -358,7 +348,7 @@ button {
     transition: var(--transition);
 }
 
-.arr-mega-menu > div:not(:last-of-type){
+.aar-mega-menu > div:not(:last-of-type){
     border-right: 1px solid #d3d3d3;
 }
 
@@ -378,7 +368,7 @@ button {
     border-radius: 50%;
 }
 
-.nav-item.has-children:hover .arr-mega-menu{
+.nav-item.has-children:hover .aar-mega-menu{
     display: flex;
 }
 
@@ -394,7 +384,7 @@ button {
     align-items: center;
 }
 
-.arr-mega-menu .dress-content a{
+.aar-mega-menu .dress-content a{
     font-size: 15px;
     color: var(--primary-color);
 }
@@ -403,6 +393,7 @@ button {
 
 .single-slide{
     position: relative;
+    height: calc(100vh - 120px);
 }
 
 .single-slide .banner-content{
@@ -423,14 +414,14 @@ button {
     margin-bottom: 8px;
 }
 
-.arr-banner .owl-dots{
+.aar-banner .owl-dots{
     position: absolute;
-    bottom: 5%;
+    bottom: 9%;
     left: 50%;
     transform: translate(-50%,-5%);
 }
 
-.arr-banner .owl-dots .owl-dot{
+.aar-banner .owl-dots .owl-dot{
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -440,7 +431,7 @@ button {
     margin: 0 5px;
 }
 
-.arr-banner .owl-dots .owl-dot.active{
+.aar-banner .owl-dots .owl-dot.active{
     background-color: var(--white-color);
 }
 

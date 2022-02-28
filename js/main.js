@@ -31,7 +31,7 @@
 
     // Banner
 
-    $(".arr-banner").owlCarousel({
+    $(".aar-banner").owlCarousel({
         items:1,
         loop:true,
         nav:false,
