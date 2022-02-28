@@ -727,6 +727,18 @@ button {
     outline: none;
 }
 
+.arr-cat-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.arr-cat-menu ul li a{
+    text-decoration: underline;
+    text-align: center;
+}
+
 .category-wpr{
     display: grid;
     grid-template-columns: 200px 1fr;
