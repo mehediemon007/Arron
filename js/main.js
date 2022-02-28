@@ -81,9 +81,29 @@
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     })
 
+    // Category Product
+
+    $(".cat-products .single-cat-dress").slice(0, 12).show();
+    $(".load-btn").on("click", function(e){
+        e.preventDefault();
+        $(".cat-products .single-cat-dress:hidden").slice(0, 8).slideDown()
+        if ($(".cat-products .single-cat-dress:hidden").length == 0) {
+            $(".load-btn").fadeOut('slow')
+        }
+    })
+
 })(jQuery);
 
 (function(){
 
+    //Filter
+    
+    const filter = document.getElementsByClassName('filter-label');
+
+    for(i=0;i<filter.length;i++){
+        filter[i].addEventListener('click',function(){
+            this.classList.toggle('active');
+        })
+    }
 
 })()
