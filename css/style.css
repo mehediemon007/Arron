@@ -714,10 +714,32 @@ button {
     font-size: 14px;
 }
 
+.filter-toggle{
+    font-size: 20px;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-box select{
+    font-size: 14px;
+    border: 1px solid #d3d3d3;
+    outline: none;
+}
+
 .category-wpr{
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-column-gap: 24px;
+    transition: var(--transition);
+}
+
+.category-wpr.hide{
+    grid-template-columns: 1fr;
+}
+
+.category-wpr.hide .cat-filter-widget{
+    display: none;
 }
 
 .aar-filter{

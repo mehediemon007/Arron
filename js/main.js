@@ -81,6 +81,20 @@
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     })
 
+    // Filter Widget
+
+    $(".filter-toggle").on("click",function(){
+
+        $(".category-wpr").toggleClass("hide");
+
+        if($(".category-wpr.hide").length){
+            $(this).css("color","#222222");
+        }
+        else{
+            $(this).css("color","#d3d3d3");
+        }
+    })
+
     // Category Product
 
     $(".cat-products .single-cat-dress").slice(0, 12).show();
