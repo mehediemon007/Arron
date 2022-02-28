@@ -756,11 +756,12 @@ button {
 }
 
 .filter-content {
-    transition: height var(--transition);
+    transition: var(--transition);
 }
 
 .filter-label.active ~ .filter-content {
     height: 0;
+    overflow-y: hidden;
 }
 
 .filter-content input[type="checkbox"]{
