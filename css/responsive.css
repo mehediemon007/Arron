@@ -4,6 +4,7 @@
     .nav-cat-menu .nav-item a.active{
         border-bottom: 2px solid var(--white-color);
     }
+
 }
 /* Max Width 1199px */
 @media only screen and (max-width:1199px){
@@ -58,6 +59,15 @@
     .nav-cat-menu .nav-item{
         display: block;
         text-align: center;
+    }
+
+    .nav-cat-menu .sub-menu{
+        background-color: #d3d3d3;
+    }
+
+    .has-children i{
+        display: inline-block;
+        font-size: 10px;
     }
 }
 

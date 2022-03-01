@@ -224,6 +224,15 @@ button {
     align-items: center;
 }
 
+.nav-cat-menu .sub-menu{
+    display: none;
+}
+
+.has-children i{
+    display: none;
+    transition: var(--transition);
+}
+
 .nav-cat-menu .nav-item a{
     font-weight: var(--font-weight-bold);
     margin: 0 20px;

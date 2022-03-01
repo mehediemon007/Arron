@@ -108,19 +108,31 @@
 
     // Nav Menu Tabs
 
-    $(".main-menu").click(function(){
-        $(".categories").removeClass("active");
-        $(this).addClass("active");
-        $(".woo-categories-nav").removeClass("show")
-        $(".woo-product-menu").addClass("show")
-    })
+    // $(".main-menu").click(function(){
+    //     $(".categories").removeClass("active");
+    //     $(this).addClass("active");
+    //     $(".woo-categories-nav").removeClass("show")
+    //     $(".woo-product-menu").addClass("show")
+    // })
 
-    $(".categories").click(function(){
-        $(".main-menu").removeClass("active");
-        $(this).addClass("active");
-        $(".woo-product-menu").removeClass("show")
-        $(".woo-categories-nav").addClass("show")
-    })
+    // $(".categories").click(function(){
+    //     $(".main-menu").removeClass("active");
+    //     $(this).addClass("active");
+    //     $(".woo-product-menu").removeClass("show")
+    //     $(".woo-categories-nav").addClass("show")
+    // })
+
+    if($(window).width() <= 991){
+       
+        $(".nav-cat-menu .has-children a").on("click",function(e){
+
+            e.preventDefault();
+            $(this).next(".sub-menu").slideToggle("300");
+            $("i",this).toggleClass("fa-plus fa-minus")
+    
+        })
+
+    }
 
 })(jQuery);
 
