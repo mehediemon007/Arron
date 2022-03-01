@@ -613,8 +613,8 @@ button {
     background-color: var(--primary-color);
 }
 
-.progress{
-    height: 8px !important;
+.single-rating-stat .progress{
+    height: 8px;
     margin: 10px 0;
 }
 
@@ -990,7 +990,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slider{
-    height: 4px;
+    height: 5px;
     position: relative;
     background: #d3d3d3;
     border-radius: 5px;
@@ -1018,24 +1018,15 @@ input[type="number"]::-webkit-inner-spin-button {
     -moz-appearance: none;
   }
   input[type="range"]::-webkit-slider-thumb{
-    height: 17px;
-    width: 17px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background: var(--primary-color);
     pointer-events: auto;
     -webkit-appearance: none;
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
   }
-  input[type="range"]::-moz-range-thumb{
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: #17A2B8;
-    pointer-events: auto;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.05);
-  }
+
 
 /* Dress Details */
 
