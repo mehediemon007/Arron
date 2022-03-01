@@ -98,11 +98,22 @@
     // Category Product
 
     $(".cat-products .single-cat-dress").slice(0, 12).show();
-    $(".load-btn").on("click", function(e){
+    $(".total-products .load-btn").on("click", function(e){
         e.preventDefault();
         $(".cat-products .single-cat-dress:hidden").slice(0, 8).slideDown()
         if ($(".cat-products .single-cat-dress:hidden").length == 0) {
-            $(".load-btn").fadeOut('slow')
+            $(".total-products .load-btn").fadeOut('slow')
+        }
+    })
+
+    // Reviews
+
+    $(".aar-reviews .single-review").slice(0, 2).show();
+    $(".aar-reviews .load-btn").on("click", function(e){
+        e.preventDefault();
+        $(".aar-reviews .single-review:hidden").slice(0, 2).slideDown()
+        if ($(".aar-reviews .single-review:hidden").length == 0) {
+            $(".aar-reviews .load-btn").fadeOut('slow')
         }
     })
 
