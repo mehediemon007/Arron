@@ -1,5 +1,31 @@
+/* Min Width 992px */
+@media only screen and (min-width:992px){
+
+    .nav-cat-menu .nav-item a.active{
+        border-bottom: 2px solid var(--white-color);
+    }
+}
 /* Max Width 1199px */
 @media only screen and (max-width:1199px){
+
+    .nav-menu > li > a{
+        font-size: 13px;
+        margin-left: 12px;
+    }
+}
+
+/* Max Width 991px */
+@media only screen and (max-width:991px){
+
+    .shop-banner-content{
+        margin-top: 40px;
+    }
+
+    .brand-image{
+        height: 150px;
+    }
+
+    /* Mobile Nav */
 
     .nav-toggle{
         display: inline-block;
@@ -14,17 +40,24 @@
         line-height: 30px;
         transition: var(--transition);
     }
-}
 
-/* Max Width 991px */
-@media only screen and (max-width:991px){
-
-    .shop-banner-content{
-        margin-top: 40px;
+    .aar-nav-menu{
+        display: none;
     }
 
-    .brand-image{
-        height: 150px;
+    .nav-cat-menu{
+        position: absolute;
+        display: none;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 10;
+    }
+
+    .nav-cat-menu .nav-item{
+        display: block;
+        text-align: center;
     }
 }
 
@@ -37,6 +70,10 @@
     
     .range-container{
         grid-template-columns: repeat(3,1fr);
+    }
+
+    .arr-cat-2 .cat-wpr{
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     }
 
     .footer-widget{
@@ -59,25 +96,6 @@
 
 /* Max Width 480px */
 @media only screen and (max-width:480px){
-
-    .aar-nav-menu{
-        display: none;
-    }
-
-    .nav-cat-menu{
-        position: absolute;
-        display: none;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary-color);
-        z-index: 10;
-    }
-
-    .nav-cat-menu .nav-item{
-        display: block;
-        text-align: center;
-    }
 
     .footer-newsletter{
         align-items: flex-start;

@@ -106,6 +106,22 @@
         }
     })
 
+    // Nav Menu Tabs
+
+    $(".main-menu").click(function(){
+        $(".categories").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-categories-nav").removeClass("show")
+        $(".woo-product-menu").addClass("show")
+    })
+
+    $(".categories").click(function(){
+        $(".main-menu").removeClass("active");
+        $(this).addClass("active");
+        $(".woo-product-menu").removeClass("show")
+        $(".woo-categories-nav").addClass("show")
+    })
+
 })(jQuery);
 
 (function(){

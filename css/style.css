@@ -229,10 +229,6 @@ button {
     margin: 0 20px;
 }
 
-.nav-cat-menu .nav-item a.active{
-    border-bottom: 2px solid var(--white-color);
-}
-
 .nav-left{
     display: flex;
     gap: 16px;
@@ -248,7 +244,6 @@ button {
 }
 
 .nav-menu > li > a{
-    font-size: 13px;
     padding: 10px 0;
 }
 
@@ -543,6 +538,12 @@ button {
     padding: 16px 8px;
 }
 
+.dress-content del{
+    font-size: 14px;
+    color: red;
+    margin: 0 4px;
+}
+
 .dress-slider .owl-nav .owl-prev,
 .dress-slider .owl-nav .owl-next {
   position: absolute;
@@ -588,6 +589,24 @@ button {
 
 .range-image:hover{
     box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+/* Flash Sale */
+
+.single-rating-stat{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.progress-bar{
+    background-color: var(--primary-color);
+}
+
+.progress{
+    height: 8px !important;
+    margin: 10px 0;
 }
 
 /* Brands */
@@ -836,7 +855,7 @@ button {
     position: relative;
 }
 
-.dress-image .tag{
+.single-cat-dress .dress-image .tag{
     top:auto;
     left: 0;
     bottom: 30px;
@@ -881,10 +900,10 @@ button {
 .arr-cat-2{
     position: relative;
     background: linear-gradient(to right, #2980B9, #6DD5FA);
-    padding: 50px 16px 24px;
+    padding: 24px 16px;
 }
 
-.sec-heading-2{
+/* .sec-heading-2{
     position: absolute;
     left: 20px;
     top: -24px;
@@ -895,6 +914,11 @@ button {
     text-align: center;
     padding: 4px 0;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.sec-heading-2 h3{
+    color: var(--white-color);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .arr-cat-2 .cat-wpr{
@@ -905,7 +929,7 @@ button {
 
 .arr-cat-2 .single-cat{
     display: flex;
-    gap: 8px;
+    gap: 20px;
     background-color: var(--white-color);
     align-items: center;
     padding: 24px 16px;
