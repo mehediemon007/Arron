@@ -11,8 +11,6 @@
     --heading-color:#243E8B;
     --text-color:#222222;
     --sec-text-color:#5d6778;
-    --border-color:rgba(135,163,255,1);
-    --table-data-color:#B5AFC7;
     --white-color:#fff;
 
     /* Typography */
@@ -877,6 +875,43 @@ button {
     border: .5px solid var(--primary-color);
     padding: 5px;
     margin-top: 16px;
+}
+
+.arr-cat-2{
+    position: relative;
+    background: linear-gradient(to right, #2980B9, #6DD5FA);
+    padding: 50px 16px 24px;
+}
+
+.sec-heading-2{
+    position: absolute;
+    left: 20px;
+    top: -24px;
+    min-width: 180px;
+    background-color: var(--white-color);
+    border: 3px solid #6DD5FA;
+    border-radius: 30px;
+    text-align: center;
+    padding: 4px 0;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arr-cat-2 .cat-wpr{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 16px;
+}
+
+.arr-cat-2 .single-cat{
+    display: flex;
+    gap: 8px;
+    background-color: var(--white-color);
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.arr-cat-2 .single-cat img{
+    width: 50px;
 }
 
 /* Range Filter */
