@@ -157,6 +157,12 @@
         $(".filters").slideToggle("300")
     })
 
+    // Dress zoom effect
+
+    $("#dress-zoom").exzoom({
+
+    });
+
 })(jQuery);
 
 (function(){
@@ -214,5 +220,24 @@
             }
         });
     });
+
+    // Dress Slide Active Thumb
+
+    const thumbImgs = document.getElementsByClassName("thumb-images")[0];
+
+    if(thumbImgs != null){
+
+        const thumbLinks = thumbImgs.querySelectorAll(".single-image a");
+
+        for(let i=0; i < thumbLinks.length ; i++){
+
+            thumbLinks[i].addEventListener("click",function(){
+                
+                let current = document.getElementsByClassName("thumb-active");
+                current[0].className = current[0].classList.remove("thumb-active")
+                this.className +="thumb-active"
+            })
+        }
+    }
 
 })()

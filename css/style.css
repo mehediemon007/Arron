@@ -535,7 +535,7 @@ button {
     display: inline-block;
     top: 10px;
     left: 10px;
-    width: 40px;
+    width: max-content;
     font-size: 12px;
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -1033,6 +1033,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .single-dress-details .thumb-images img{
     margin-bottom: 10px;
     opacity: .5;
+    transition: opacity var(--transition);
+}
+
+.thumb-images .thumb-active img{
+    opacity: 1;
 }
 
 .single-dress-details .single-image img{
@@ -1098,6 +1103,17 @@ input[type="number"]::-webkit-inner-spin-button {
     gap: 5px;
     margin-bottom: 8px;
     padding-left: 16px;
+}
+
+.recent-dresses{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.recent-dresses .single-dress{
+    width: calc(100% / 4);
 }
 
 .review-stats{
