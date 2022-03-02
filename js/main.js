@@ -145,6 +145,11 @@
 
     }
 
+    $(".aar-faq .filter-label").on("click",function(){
+
+        $("i",this).toggleClass("fa-minus fa-plus")
+    })
+
     // Reviews Filtering
 
     $(".filter-toggle").on("click",function(){
