@@ -1047,6 +1047,57 @@ input[type="number"]::-webkit-inner-spin-button {
     border-bottom: 1px solid #d3d3d3;
 }
 
+.aar-reviews-sorting .filter-toggle{
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
+    vertical-align: baseline;
+}
+
+.single-filter input[type="checkbox"]{
+    appearance: none;
+}
+
+.aar-reviews-sorting .single-filter label span{
+    display: inline-block;
+    width: max-content;
+    font-size: 13px;
+    border: 1px solid #d3d3d3;
+    margin-right: 14px;
+    padding: 5px 14px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.aar-reviews-sorting .single-filter input[type="checkbox"]:checked + span{
+    border-color: var(--primary-color);
+}
+
+.aar-reviews-sorting .filters{
+    display: none;
+    padding-top: 24px;
+}
+
+.filters .single-filter p{
+    margin-bottom: 8px;
+}
+
+.filt-clear{
+    position: relative;
+    display: none;
+    font-size: 13px;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+.filt-clear::before{
+    position: absolute;
+    content: "|";
+    left: 0;
+}
+
 .single-review{
     display: none;
     margin: 12px 0;

@@ -145,6 +145,13 @@
 
     }
 
+    // Reviews Filtering
+
+    $(".filter-toggle").on("click",function(){
+        
+        $(".filters").slideToggle("300")
+    })
+
 })(jQuery);
 
 (function(){
