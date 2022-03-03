@@ -1379,8 +1379,8 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--primary-color);
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
-    min-width: 320px;
-    z-index: 10;
+    width: 315px;
+    z-index: 100;
     padding: 8px;
     visibility: hidden;
     opacity: 0;
@@ -1393,15 +1393,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-popup .fa-times{
-    margin-left: 10px;
+    margin-left: 5px;
     font-weight: 600;
 }
 
 .cart-popup .cart-dresses{
+    position: relative;
     height: auto;
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 12px 0 0;
 }
 
 .cart-popup .single-dress{
@@ -1419,6 +1420,26 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--primary-color);
     text-align: center;
     line-height: 30px;
+}
+
+.cart-dresses .slick-arrow{
+    position: absolute;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--white-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cart-dresses .slick-next{
+    bottom: 0;
+}
+
+.cart-dresses .slick-prev{
+    top: 0;
 }
 
 /* Footer */

@@ -172,7 +172,20 @@
 
         $(".dis-form").slideToggle("300")
     })
-    
+
+    // Cart Popup Slider
+
+    $('.cart-popup .cart-dresses').slick({
+        // autoplay: true,
+        vertical: true,
+        infinite: true,
+        // slidesPerRow: 4,
+        slidesToShow: 2,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-angle-up'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-angle-down'></i></button>"
+    });
+
 })(jQuery);
 
 (function(){
