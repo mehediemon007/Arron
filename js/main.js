@@ -198,6 +198,22 @@
         })
     }
 
+    // Login Tab
+
+    $(".sign-in").click(function(){
+        $(".sign-up").removeClass("active");
+        $(this).addClass("active");
+        $(".aar-sign-up").removeClass("show")
+        $(".aar-sign-in").addClass("show")
+    })
+
+    $(".sign-up").click(function(){
+        $(".sign-in").removeClass("active");
+        $(this).addClass("active");
+        $(".aar-sign-in").removeClass("show")
+        $(".aar-sign-up").addClass("show")
+    })
+
 })(jQuery);
 
 (function(){
