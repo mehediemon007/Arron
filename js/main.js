@@ -159,9 +159,19 @@
 
     // Dress zoom effect
 
-    $("#dress-zoom").exzoom({
+    if($("#dress-zoom").length){
 
-    });
+        $("#dress-zoom").exzoom({
+
+        });
+    }
+
+    // Discount Code
+
+    $(".dis-toggle").on("click",function(){
+
+        $(".dis-form").slideToggle("300")
+    })
 
 })(jQuery);
 
