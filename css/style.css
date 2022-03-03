@@ -1467,6 +1467,53 @@ fieldset input:not([type="checkbox"]):focus{
     margin: 0 auto;
 }
 
+.theme-switch{
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.theme-switch input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+    visibility: hidden;
+}
+
+.theme-switch .theme-toggle{
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    padding: 4px 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.theme-switch .theme-toggle::before{
+    position: absolute;
+    content: "";
+    left: -4px;
+    top: 0;
+    width: 22px;
+    height: 100%;
+    background-color: var(--white-color);
+    border: 1px solid #d3d3d3;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.theme-switch.checked .theme-toggle::before{
+    background-color: green;
+    border-color: green;
+    left: auto;
+    right: -4px;
+}
+
 /* Cart Pop Up */
 
 .nav-num{

@@ -186,6 +186,18 @@
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-angle-down'></i></button>"
     });
 
+    // Toggle Btn
+
+    // Toggle Theme
+
+    if($("#theme-check").length){
+
+        $("#theme-check").change(function(){
+
+            $(".theme-switch").toggleClass("checked")
+        })
+    }
+
 })(jQuery);
 
 (function(){

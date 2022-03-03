@@ -560,9 +560,8 @@
                                 <div class="delivery-options mb-40">
                                     <h5 class="mb-4">Delivery Options</h5>
                                     <ul>
-                                        <li class="second-input"><label><input type="radio" name="delivery"> bd standard delivery 150tk</label></li>
-                                        <li class="second-input"><label><input type="radio" name="delivery"> bd express delivery 250tk</label></li>
-                                        <li class="second-input border-bottom"><label><input type="radio" name="delivery"> bd 7days delivery 50tk</label></li>
+                                        <li class="second-input"><label><input type="radio" name="delivery"> Inside Dhaka 150tk</label></li>
+                                        <li class="second-input"><label><input type="radio" name="delivery"> Outside Dhaka 250tk</label></li>
                                     </ul>
                                 </div>
                             </div>
@@ -585,15 +584,27 @@
                                                 <img src="images/icons/credit-card.png" alt="card">
                                             </label>
                                         </li>
-                                        <li class="second-input border-bottom">
-                                            <input type="radio" name="payment" id="online-pay">
-                                            <label for="online-pay">
+                                        <a href="#">
+                                            <li class="second-input border-bottom">
+                                                <input type="radio" name="payment" id="online-pay">
+                                                <label for="online-pay">
+                                                    <div class="content">
+                                                        <h6>Bkash</h6>
+                                                    </div>
+                                                    <img src="images/icons/bkash.jpg" alt="bkash">
+                                                </label>
+                                            </li>
+                                        </a>
+                                        <a href="#"><li class="second-input border-bottom">
+                                            <input type="radio" name="payment" id="ssl-pay">
+                                            <label for="ssl-pay">
                                                 <div class="content">
-                                                    <h6>Paypal</h6>
+                                                    <h6>SSL Commerce</h6>
                                                 </div>
-                                                <img src="images/icons/paypal.png" alt="paypal">
+                                                <img src="images/icons/ssl.jpg" alt="SSL">
                                             </label>
-                                        </li>
+                                            </li>
+                                        </a>
                                     </ul>
                                 </div>
                                 <div class="card-info mb-4">
@@ -612,9 +623,16 @@
                                             </fieldset>
                                         </div>
                                     </form>
+                                    <div class="nav-meta-icon theme-switch">
+                                        <label for="theme-check" class="d-flex align-items-center">
+                                            <input type="checkbox" id="theme-check">
+                                            <span class="theme-toggle"></span>
+                                            Save Bank Info
+                                        </label>
+                                    </div>
                                     <div class="payamount">
                                         <h4>Total Pay Tk. 1800</h4>
-                                        <button type="submit" class="check-submit-btn w-100">Checkout</button>
+                                        <button type="submit" class="check-submit-btn w-100">Payment</button>
                                     </div>
                                 </div>
                             </div>
