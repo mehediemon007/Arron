@@ -214,6 +214,22 @@
         $(".aar-sign-up").addClass("show")
     })
 
+    // Wish Dress Update
+
+    if($(".wish-change").length){
+
+        $(".wish-change").on("click",function(){
+            $(this).parent().removeClass("show");
+            $(this).parent().siblings(".size-quantity-filter").addClass("show");
+        })
+
+        $(".wish-upgrade").on("click",function(){
+
+            $(this).parent().parent().removeClass("show");
+            $(this).parent().parent().siblings(".size-and-quantity").addClass("show");
+        })
+    }
+
 })(jQuery);
 
 (function(){
