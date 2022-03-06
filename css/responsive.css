@@ -240,6 +240,10 @@
         padding: 40px 0;
     }
 
+    .aar-reviews-sorting{
+        padding: 16px;
+    }
+
     .footer-newsletter{
         align-items: flex-start;
     }
