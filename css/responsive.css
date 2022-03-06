@@ -194,6 +194,10 @@
         display: none;
     }
 
+    .dress-images .slide-images{
+        position: relative;
+    }
+    
 }
 
 /* Max Width 480px */

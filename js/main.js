@@ -246,7 +246,11 @@
         $(".dress-images .slide-images").addClass("owl-carousel");
 
         $(".dress-images .slide-images").owlCarousel({
-            items:1
+            items:1,
+            loop:true,
+            dots:false,
+            stagePadding: 100,
+            margin:5
         })
 
     }
@@ -258,7 +262,11 @@
             $(".dress-images .slide-images").addClass("owl-carousel");
     
             $(".dress-images .slide-images").owlCarousel({
-                items:1
+                items:1,
+                loop:true,
+                dots:false,
+                stagePadding: 100,
+                margin:5
             })
     
         }
@@ -343,7 +351,7 @@
                 
                 let current = document.getElementsByClassName("thumb-active");
                 current[0].className = current[0].classList.remove("thumb-active")
-                this.className +="thumb-active"
+                this.className +=" thumb-active"
             })
         }
     }
