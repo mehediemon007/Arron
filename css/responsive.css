@@ -18,6 +18,10 @@
 /* Max Width 991px */
 @media only screen and (max-width:991px){
 
+    .single-slide{
+        height: auto;
+    }
+
     .shop-banner-content{
         margin-top: 40px;
     }
@@ -74,6 +78,10 @@
 /* Max Width 767px */
 @media only screen and (max-width:767px){
 
+    .ads-scroll .item{
+        text-align: center;
+    }
+
     .nav-item .fa-search{
         display: inline-block;
     }
@@ -84,6 +92,10 @@
 
     .arr-cat-2 .cat-wpr{
         grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+
+    .campaign-slider .camp-content{
+        text-align: center;
     }
 
     .footer-widget{
@@ -98,6 +110,10 @@
 /* Max Width 575px */
 @media only screen and (max-width:575px){
 
+    .single-slide .banner-content{
+        text-align: center;
+    }
+
     .cat-image img{
         width: 100%;
         object-fit: cover;
@@ -106,6 +122,22 @@
 
 /* Max Width 480px */
 @media only screen and (max-width:480px){
+
+    .cat-content h1,
+    .banner-content h1{
+        font-size: 45px;
+    }
+
+    .campaign-slider .camp-content{
+        position: relative;
+        padding: 24px 0;
+        background-color: var(--primary-color);
+
+    }
+
+    .camp-content h2{
+        font-size: 26px;
+    }
 
     .footer-newsletter{
         align-items: flex-start;
@@ -127,8 +159,16 @@
 /* Max Width 380px */
 @media only screen and (max-width:380px){
 
+    .aar-banner .single-slide img{
+        height: 230px;
+    }
+
     h2{
         font-size: 35px;
+    }
+
+    .aar-category{
+        padding-top: 50px;
     }
 
     .range-container{
@@ -137,5 +177,13 @@
 
     .footer-newsletter input:not([type="checkbox"]){
         width: 280px;
+    }
+}
+
+/* Max Width 320px */
+@media only screen and (max-width:320px){
+
+    .banner-content h1{
+        font-size: 38px;
     }
 }
