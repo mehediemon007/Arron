@@ -241,13 +241,35 @@
 
     // Dress Details
 
-    $(".dress-images .slide-images").owlCarousel({
-        items:1
-    })
+    if($(window).width() <= 575){
 
-    if($(window).width() > 575){
-        // $(".dress-images .slide-images").owlCarousel().des
+        $(".dress-images .slide-images").addClass("owl-carousel");
+
+        $(".dress-images .slide-images").owlCarousel({
+            items:1
+        })
+
     }
+
+    $(window).resize(function(){
+
+        if($(window).width() <= 575){
+
+            $(".dress-images .slide-images").addClass("owl-carousel");
+    
+            $(".dress-images .slide-images").owlCarousel({
+                items:1
+            })
+    
+        }
+        else{
+
+            $(".dress-images .slide-images").removeClass("owl-carousel");
+
+            $(".dress-images .slide-images").owlCarousel("destroy")
+
+        }
+    })
 
 })(jQuery);
 
