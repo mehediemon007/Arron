@@ -45,6 +45,11 @@
         padding: 0 10px;
     }
 
+    .recent-dresses{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
     /* Mobile Nav */
 
     .nav-toggle{
@@ -141,6 +146,18 @@
         width: 83%;
     }
 
+    .category-wpr{
+        grid-template-columns: 1fr;
+    }
+
+    .category-wpr .cat-filter-widget{
+        display: none;
+    }
+
+    .category-wpr.hide .cat-filter-widget{
+        display: block;
+    }
+
     .footer-widget{
         margin-bottom: 16px;
     }
@@ -164,6 +181,17 @@
 
     .sell-steps{
         justify-items: flex-start;
+    }
+
+    .single-review .review{
+        border-left: none;
+        margin-top: 16px;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .thumb-images{
+        display: none;
     }
 
 }
@@ -241,7 +269,7 @@
     }
 
     .aar-category{
-        padding-top: 50px;
+        padding-top: 0;
     }
 
     .range-container{
@@ -263,8 +291,21 @@
         margin-bottom: 24px;
     }
 
+    .arr-cat-menu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 16px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
     .footer-newsletter input:not([type="checkbox"]){
         width: 280px;
+    }
+
+    .aar-reviews-sorting div[class^="col-"]{
+        width: 100%;
+        margin-bottom: 16px;
     }
 }
 

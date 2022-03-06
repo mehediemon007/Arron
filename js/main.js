@@ -239,6 +239,16 @@
         $("i",this).toggleClass("fa-plus fa-minus");
     })
 
+    // Dress Details
+
+    $(".dress-images .slide-images").owlCarousel({
+        items:1
+    })
+
+    if($(window).width() > 575){
+        // $(".dress-images .slide-images").owlCarousel().des
+    }
+
 })(jQuery);
 
 (function(){
