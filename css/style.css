@@ -1771,6 +1771,21 @@ fieldset input:not([type="checkbox"]):focus{
     margin-left: 16px;
 }
 
+.edit-details-form fieldset{
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-gap: 24px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.edit-details-form input{
+    height: 24px;
+    padding-left: 8px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
 /* Footer */
 
 .footer-newsletter {
