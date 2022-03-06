@@ -218,17 +218,26 @@
 
     if($(".wish-change").length){
 
-        $(".wish-change").on("click",function(){
+        $(".wish-change").on("click",function(e){
+            e.preventDefault();
             $(this).parent().removeClass("show");
             $(this).parent().siblings(".size-quantity-filter").addClass("show");
         })
 
-        $(".wish-upgrade").on("click",function(){
-
+        $(".wish-upgrade").on("click",function(e){
+            e.preventDefault();
             $(this).parent().parent().removeClass("show");
             $(this).parent().parent().siblings(".size-and-quantity").addClass("show");
         })
     }
+
+    // Checkout cart
+
+    $(".cart-toggle").click(function(){
+
+        $(".arr-cart-total").toggleClass("show");
+        $("i",this).toggleClass("fa-plus fa-minus");
+    })
 
 })(jQuery);
 

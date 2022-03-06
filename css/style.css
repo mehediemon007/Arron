@@ -1247,6 +1247,8 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: VAR(--white-color);
     border: 1px solid var(--primary-color);
     border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
 }
 
 .single-step.passed .step-num{
@@ -1271,7 +1273,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .cart-heading h5{
     font-size: 18px;
-    text-align: center;
 }
 
 .cart-dresses{
@@ -1371,7 +1372,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-heading{
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
     border-bottom: 1px solid #d3d3d3;
 }
 
