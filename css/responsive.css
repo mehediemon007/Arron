@@ -314,6 +314,7 @@
     .aar-reviews-sorting div[class^="col-"]{
         width: 100%;
         margin-bottom: 16px;
+        text-align: left !important;
     }
 }
 
