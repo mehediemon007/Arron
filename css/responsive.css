@@ -54,6 +54,10 @@
         justify-content: center;
     }
 
+    .aar-banner-wpr{
+        margin-bottom: 50px;
+    }
+
     /* Mobile Nav */
 
     .nav-toggle{
