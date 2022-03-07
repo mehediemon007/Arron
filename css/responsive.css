@@ -50,6 +50,10 @@
         grid-template-columns: repeat(2,1fr);
     }
 
+    .counter{
+        justify-content: center;
+    }
+
     /* Mobile Nav */
 
     .nav-toggle{
@@ -315,6 +319,33 @@
         width: 100%;
         margin-bottom: 16px;
         text-align: left !important;
+    }
+
+    .flip-clock-container [class|="flip-item"]{
+        margin-left: 5px;
+    }
+
+    .flip-clock-container [class|="flip-item"] .flip-digit{
+        width: 30px;
+        height: 40px;
+    }
+    
+    .flip-clock-container [class|="flip-item"]::before{
+        font-size: 24px;
+        line-height: 35px;
+        margin: 0 -7px;
+    }
+    
+    .flip-clock-container [class|="flip-item"] .flip-digit > span::after, .flip-clock-container [class|="flip-item"] .flip-digit > span::before{
+        font-size: 14px;
+    }
+    
+    .flip-clock-container [class|="flip-item"] .flip-digit > span::before{
+        line-height: 20px;
+    }
+    
+    .flip-clock-container [class|="flip-item"] .flip-digit > span::after{
+        line-height: 18px;
     }
 }
 

@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/flip-clock.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
@@ -66,7 +67,7 @@
                                 <i class="fas fa-search"></i>
                             </div>
                             <div class="nav-icon">
-                                <span><i class="fas fa-user"></i></span>
+                                <a href="account.html" class="text-white"><i class="fas fa-user"></i></a>
                             </div>
                             <div class="nav-icon">
                                 <a href="wishlist.html" class="position-relative text-white"><i class="fas fa-heart"></i><span class="nav-num">1</span></a>
@@ -477,7 +478,16 @@
          <section class="aar-sale">
             <div class="container">
                 <div class="sec-heading">
-                    <h3>Flash Sale</h3>
+                    <h3 class="d-none d-lg-block">Flash Sale</h3>
+                    <div class="counter">
+                        <h5>Deals End In</h5>
+                        <ul class="flip-clock-container aar-countdown">
+                            <li class="flip-item-seconds">23</li>
+                            <li class="flip-item-minutes">38</li>
+                            <li class="flip-item-hours">23</li>
+                            <li class="flip-item-days">01</li>
+                          </ul>
+                    </div>
                 </div>
                 <div class="dress-slider owl-carousel mt-40">
                     <div class="single-dress">
@@ -1251,6 +1261,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/flip-clock.js"></script>
     <script src="js/main.js"></script>
 
 </body>
