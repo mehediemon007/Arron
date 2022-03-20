@@ -1085,6 +1085,18 @@ input[type="number"]::-webkit-inner-spin-button {
     border-bottom-color: var(--primary-color);
 }
 
+.quantity-change {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 1.35rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
 .add-cart{
     display: block;
     width: 100%;
@@ -1093,6 +1105,10 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--primary-color);
     text-align: center;
     line-height: 40px;
+}
+
+.add-cart:hover{
+    color: var(--white-color);
 }
 
 .aar-faq{
