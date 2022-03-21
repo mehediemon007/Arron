@@ -19,6 +19,10 @@
     .delivery-options ul li{
         width: 100%;
     }
+
+    .cat-content h1{
+        font-size: 45px;
+    }
 }
 
 /* Max Width 991px */
@@ -75,7 +79,7 @@
     }
 
     .aar-nav-menu{
-        display: none;
+        display: none !important;
     }
 
     .nav-cat-menu{
@@ -177,6 +181,14 @@
 
 /* Max Width 575px */
 @media only screen and (max-width:575px){
+
+    .cat-content{
+        align-items: center;
+    }
+
+    .cat-content h1{
+        font-size: 50px;
+    }
 
     .single-slide .banner-content{
         text-align: center;
