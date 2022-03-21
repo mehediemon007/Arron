@@ -62,6 +62,10 @@
         margin-bottom: 50px;
     }
 
+    .arr-cat-2 .cat-wpr{
+        grid-template-columns: repeat(4,1fr);
+    }
+
     /* Mobile Nav */
 
     .nav-toggle{
