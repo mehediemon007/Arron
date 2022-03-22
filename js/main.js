@@ -356,4 +356,15 @@
         }
     }
 
+    // Privacy Accordion
+
+    const policyFilter = document.getElementsByClassName('policy-label');
+
+    for(i=0; i < policyFilter.length; i++){
+        
+        policyFilter[i].addEventListener('click',function(){
+            this.classList.toggle('active');
+        })
+    }
+
 })()

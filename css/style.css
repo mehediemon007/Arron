@@ -2033,3 +2033,50 @@ fieldset input:not([type="checkbox"]):focus{
     margin-top: 10px;
 }
 
+.aar-terms p{
+    font-size: .95rem;
+    margin-bottom: 8px;
+}
+
+.policy-label{
+    position: relative;
+    font-size: 1.15rem;
+    font-weight: var(--font-weight-semi-bold);
+    margin: 24px 0 16px;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.policy-label::before{
+    position: absolute;
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: var(--font-weight-semi-bold);
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+}
+
+.policy-label.active::before{
+    content: "\f068";
+}
+
+.policy-content ul li{
+    margin: 0 0 8px 50px;
+    list-style: square;
+}
+
+.policy-content {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .3s ease;
+    transition: var(--transition) ease;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0;
+}
+
+.policy-label.active ~ .policy-content {
+    height: auto;
+    padding-bottom: 24px;
+}
+
