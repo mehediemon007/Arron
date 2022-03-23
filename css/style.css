@@ -2080,3 +2080,24 @@ fieldset input:not([type="checkbox"]):focus{
     padding-bottom: 24px;
 }
 
+.aar-privacy{
+    padding: 32px;
+    margin-top: 40px;
+    background-color: var(--white-color);
+}
+
+.aar-privacy p,
+.aar-privacy li{
+    font-size: .95rem;
+    margin: 8px 0;
+    list-style: disc;
+}
+
+.aar-privacy li{
+    margin-left: 36px;
+}
+
+.aar-privacy h3{
+    margin: 16px 0 24px;
+}
+
