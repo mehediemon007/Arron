@@ -2101,3 +2101,28 @@ fieldset input:not([type="checkbox"]):focus{
     margin: 16px 0 24px;
 }
 
+.aar-about-us p{
+    font-size: .95rem;
+    margin: 8px 0;
+}
+
+.ceo-image{
+    background: url("../images/others/about-bg.jpg");
+}
+
+.aar-about-us .ceo-img{
+    max-width: 50%;
+    vertical-align: middle;
+    margin-bottom: 24px;
+}
+
+.aar-about-us .progress{
+    height: 6px;
+    margin-bottom: 20px;
+}
+
+.aar-perfection{
+    border: 1px solid #d3d3d3;
+    padding: 24px;
+}
+
