@@ -1450,10 +1450,16 @@ fieldset{
     margin-bottom: 24px;
 }
 
-fieldset input:focus ~ label{
+fieldset input:focus ~ label,
+fieldset input:not(:placeholder-shown) ~ label,
+fieldset input:not([value=""]):valid ~ label{
     top: -12px;
     color: var(--primary-color);
     background-color: var(--white-color);
+}
+
+fieldset input::placeholder{
+    opacity: 0;
 }
 
 fieldset input:not([type="checkbox"]):focus{
