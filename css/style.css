@@ -859,11 +859,21 @@ button {
     border-width: 2px;
 }
 
+.size-filter input[type="radio"]{
+    display: none;
+}
+
 .size-filter label span{
-    position: absolute;
-    left: 50%;
-    line-height: 25px;
-    transform: translateX(-50%);
+    display: inline-block;
+    min-width: 25px;
+    max-width: max-content;
+    height: 25px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+.size-filter input[type="radio"]:checked ~ span{
+    border-width: 2px;
 }
 
 .single-cat-dress{
@@ -1078,17 +1088,15 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .single-dress-details .size-filter label span{
     position: relative;
-    display: inline-block;
-    width: 20px;
+    min-width: 20px;
     margin-right: 4px;
     padding: 1px 0;
-    text-align: center;
+    border: none;
     border-bottom: 1px solid transparent;
-    transition: var(--transition);
 }
 
 .single-dress-details .size-filter input[type="radio"]:checked + span{
-    border-bottom-color: var(--primary-color);
+    border-bottom:1px solid var(--primary-color);
 }
 
 .quantity-change {
@@ -1274,6 +1282,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .single-step.passed .step-num{
+    color: var(--white-color);
     background-color: var(--primary-color);
 }
 
@@ -1451,8 +1460,8 @@ fieldset{
 }
 
 fieldset input:focus ~ label,
-fieldset input:not(:placeholder-shown) ~ label,
-fieldset input:not([value=""]):valid ~ label{
+/* fieldset input:not([value=""]):valid ~ label, */
+fieldset input:not(:placeholder-shown) ~ label{
     top: -12px;
     color: var(--primary-color);
     background-color: var(--white-color);

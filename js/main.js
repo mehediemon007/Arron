@@ -1,5 +1,18 @@
 ;(function($){
 
+    // Dress Details Image Lightbox
+
+    if($(".slide-images").length){
+        
+        $('.slide-images').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    }
+
     // Nav Toggle
 
     $(".nav-toggle").on("click",function(){
