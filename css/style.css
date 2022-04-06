@@ -1079,7 +1079,7 @@ input[type="range"]::-webkit-slider-thumb{
     height: 20px;
     border-radius: 50%;
     border: 1px solid var(--primary-color);
-    margin-right: 4px;
+    margin-right: 8px;
 }
 
 .single-dress-details .filter-content input[type="radio"]:checked{
@@ -2169,7 +2169,6 @@ fieldset input:not([type="checkbox"]):focus{
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    border: 1px solid var(--primary-color) !important;
     background-color: var(--white-color) !important;
     border-radius: 50% !important;
 }
@@ -2237,13 +2236,18 @@ fieldset input:not([type="checkbox"]):focus{
     position: relative;
 }
 
+.aar-dress-content .filter-content input[type="radio"]:checked{
+    box-shadow: none;
+}
+
 .aar-dress-content .filter-content input[type="radio"]:checked::before{
     position: absolute;
     content: "\f00c";
+    font-size: 1rem;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     color: var(--white-color);
-    left: 5px;
+    left: 6px;
     top: 2px;
 }
 
