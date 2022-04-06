@@ -2275,7 +2275,8 @@ fieldset input:not([type="checkbox"]):focus{
     justify-content: center;
 }
 
-.aar-dress-content .filter-content li span{
+.aar-dress-content .filter-content li span,
+.aar-dress-content p{
     font-size: 1rem;
     text-align: center;
 }
