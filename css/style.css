@@ -2197,9 +2197,12 @@ fieldset input:not([type="checkbox"]):focus{
     margin: 16px 0;
 }
 
+.aar-dress-content .add-cart{
+    margin: 24px 0;
+}
+
 .aar-dress-content .wish-btn{
     font-weight: var(--font-weight-semi-bold);
-    margin: 16px 0 8px;
     background-color: transparent;
     outline: none;
     border: none;
@@ -2208,5 +2211,72 @@ fieldset input:not([type="checkbox"]):focus{
 
 .aar-dress-content .wish-btn:hover{
     color: orangered;
+}
+
+.aar-dress-content .size-filter label span{
+    font-weight: var(--font-weight-semi-bold);
+    min-width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border: 1.2px solid transparent;
+    cursor: pointer;
+}
+
+.aar-dress-content .size-filter label span:hover{
+    border-color: rgb(250, 194, 174);
+}
+
+.aar-dress-content .size-filter input[type="radio"]:checked + span{
+    background-color: rgb(250, 194, 174);
+    border-bottom: none;
+}
+
+.aar-dress-content .filter-content input[type="radio"]{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.aar-dress-content .filter-content input[type="radio"]:checked::before{
+    position: absolute;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: var(--white-color);
+    left: 5px;
+    top: 2px;
+}
+
+.aar-dress-content .social-links a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    line-height: 45px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.aar-dress-content .social-links .fb{
+    background-color: #35579a;
+}
+
+.aar-dress-content .social-links .insta{
+    background-color: #E14646;
+}
+
+.aar-dress-content .social-links .wp{
+    background-color: #1EBF44;
+}
+
+.aar-dress-content .filter-content li{
+    justify-content: center;
+}
+
+.aar-dress-content .filter-content li span{
+    font-size: 1rem;
+    text-align: center;
 }
 
