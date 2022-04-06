@@ -2287,7 +2287,7 @@ fieldset input:not([type="checkbox"]):focus{
 
 /* Login 2 */
 
-.aar-login-2{
+/* .aar-login-2{
     width: 100%;
     height: calc(100vh - 160px);
     display: flex;
@@ -2380,7 +2380,7 @@ fieldset input:not([type="checkbox"]):focus{
 .login-heading{
     position: relative;
     margin-top: -60px;
-}
+} */
 
 
 
